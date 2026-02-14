@@ -1,0 +1,27 @@
+{
+  "name": "libas-mitra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "server": "node server/server.js",
+    "client": "cd client && npm run dev",
+    "build": "npm install && cd client && npm install --legacy-peer-deps",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "prod": "npm run server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cloudinary": "^2.8.0",
+    "concurrently": "^9.2.1",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^9.0.0",
+    "multer": "^2.0.2",
+    "replicate": "^1.4.0"
+  }
+}
